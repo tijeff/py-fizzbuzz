@@ -6,4 +6,4 @@ __project__ = "FizzBuzz"
 class FizzBuzz:
     @classmethod
     def say(cls, param):
-        return str(param)
+        return "Fizz" if not param % 3 else str(param)
