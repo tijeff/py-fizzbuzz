@@ -3,10 +3,11 @@ from fizzbuzz import FizzBuzz
 
 
 class TestFizzBuzz(TestCase):
+    def setUp(self):
+        self.fizzbuzz = FizzBuzz
+
     def test_first(self):
-        my_fizzbuzz = FizzBuzz
-        self.assertEqual("1", my_fizzbuzz.say(1))
+        self.assertEqual("1", self.fizzbuzz.say(1))
 
     def test_traite_fizz(self):
-        my_fizzbuzz = FizzBuzz
-        self.assertEqual("Fizz", my_fizzbuzz.say(3))
+        self.assertEqual("Fizz", self.fizzbuzz.say(3))
