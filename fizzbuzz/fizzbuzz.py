@@ -9,4 +9,4 @@ class FizzBuzz:
 
     @classmethod
     def say(cls, param):
-        return "Fizz" if not param % 3 else "Buzz" if not param % 10 else str(param)
+        return "FizzBuzz" if not param % 15 else "Fizz" if not param % 3 else "Buzz" if not param % 10 else str(param)

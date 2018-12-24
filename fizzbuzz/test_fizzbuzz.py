@@ -14,3 +14,6 @@ class TestFizzBuzz(TestCase):
 
     def test_buzz_10(self):
         self.assertEqual("Buzz", self.fizzbuzz.say(10))
+
+    def test_fizzbuzz_30(self):
+        self.assertEqual("FizzBuzz", self.fizzbuzz.say(30))
